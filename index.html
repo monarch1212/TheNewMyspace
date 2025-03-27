@@ -14,8 +14,8 @@
         text-align: center;
         padding: 20px;
       }
-      h3{
-        color: navy;
+h3 {
+color: navy;
 font-size: 36px;
 }
 p {
@@ -25,7 +25,53 @@ img{
 width: 200px;
 border-radius: 50%;
 border: 3px solid green;
-margin-to: 10px;
+margin-top: 10px;
+}
+.table-style1 {
+width: 80%;
+margin: 20px auto;
+border: 2px solid navy;
+}
+.table-style1 th, .table-style1 td {
+border: 1px solid navy;
+padding: 10px;
+text-align: center;
+}
+.table-style1 th {
+background-color: lightblue;
+}
+.table-style2 {
+width: 60%;
+margin: 20px auto;
+border-collapse: collapse;
+border: 2px solid darkgreen;
+}
+.table-style2 th, .table-style2 td {
+border: 1px solid darkgreen;
+padding: 10px;
+text-align: center;
+}
+.table-style2 th {
+background-color: lightgreen;
+}
+.about {
+width: 60%;
+margin: 20px auto;
+text-align:left;
+}
+div.mycontainer {
+width: 66%;
+overflow:auto;
+}
+div.mycontainer div {
+width:50%;
+float:left;
+}
+.video {
+width:39%;
+margin:10px auto;
+text-align:center;
+border:3px solid green;
 }
     </style>
     <title>The New Myspace</title>
@@ -34,7 +80,6 @@ margin-to: 10px;
   <body>
     <header>
       <h3>Welcome to The New Myspace</h3>
-       <section>
       <p>This the the future of Myspace!</p>
         <pre>
         Name: Myesha
@@ -42,6 +87,7 @@ margin-to: 10px;
         Location: Houston
       </pre>
     </header>
+<section class="about">
     <p>Check out our collaborations: 
           <a href="https://shopakira.com/"target="_blank">AKIRA CLOTHING</a>
         </p>
@@ -52,7 +98,7 @@ margin-to: 10px;
       </section>
     <hr>
     <h2>My Hobbies</h2>
-    <table>
+    <table class="table-style1">
       <tr>
         <th>Hobby</th>
       <th>Hrs/Week</th>
@@ -67,7 +113,7 @@ margin-to: 10px;
       </tr>
       </table>
     <h2>Fave Movies</h2>
-    <table>
+    <table class="table-style2">
       <tr>
         <th>Movie</th>
       <th>Year</th>
@@ -81,19 +127,25 @@ margin-to: 10px;
         <td>2001</td>
       </tr>
       </table>
+<div class="mycontainer">
+<div>
     <h2>Fave Foods</h2>
     <ul>
       <li>Sushi</li>
       <li>Seafood</li>
       <li>Stuffed Mushrooms</li>
       </ul>
-    <h2>Fave Dessert</h2>
+</div>
+<div>    
+<h2>Fave Dessert</h2>
     <ul>
       <li>Blondie</li>
       <li>Tres Leche Cake</li>
       <li>Donuts</li>
     </ul>
-    <section>
+</div>
+</div>    
+<section class="video">
     <h2>Favorite Video</h2>
     <video width="480" height="360" controls>
       <source src="https://videos.pexels.com/video-files/855282/855282-hd_1280_720_25fps.mp4">
